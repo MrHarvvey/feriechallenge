@@ -43,7 +43,7 @@ def get_distance(loc1, loc2):
 
 def distance_me():
     loc1 = input("first city: ")
-    if loc1 == "me":
+    if loc1.lower() == "me":
         my_localization = geocoder.ip('me')
         loc1 = my_localization.latlng
         loc2 = localiation_x_y(get_localization_info(input("second city: ")))
