@@ -8,31 +8,47 @@ import requests
 def get_books(author):
     url = "http://data.bn.org.pl/api/bibs.json?author=" + author
     response = requests.request("GET", url)
-    return response.json()
-
+    return response.json(), print(response.text)
 
 class Book:
+    #constructor
     def __init__(self, id, title, author, publisher):
         self.id = id
         self.title = title
         self.author = author
         self.publisher = publisher
         self.is_borowed = False
+
     def __str__(self):
         return f"Title: {self.title}\nAuthor:{self.author}\nPublisher:{self.publisher}\n\n"
+    # Function to create and append new student
+    def add_new_book(self, id, title, author, publisher):
+        ob = Book(id, title, author, publisher)
+        ls.append(ob)
+
+    # Function to display book details
+    def display(self, ob):
+         print("Id   : ", ob.id)
+         print("title : ", ob.title)
+         print("author : ", ob.author)
+         print("publisher : ", ob.publisher)
+         print("\n")
 
     def is_borowed(self):
         return self.is_borowed
 
-
-dic_books = {}
+# Create a list to add Books
+ls =[]
 
 def list_of_books(json_parse):
-    for ix, where in enumerate(json_parse['bibs']):
-        dic_books[f"book_{ix}"] = Book(where['id'], where['title'], where['author'], where['publisher'])
+    for where in json_parse['bibs']:
+        print(where)
+        Book.add_new_book(where['id'], where['title'], where['author'], where['publisher'])
 
 
 list_of_books(get_books("Sienkiewicz"))
 
-for book in dic_books:
-    print(dic_books[book].is_borowed)
+print(ls)
+
+# for book in dic_books:
+#     print(dic_books[book].is_borowed)
