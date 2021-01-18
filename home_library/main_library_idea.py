@@ -21,6 +21,7 @@ class Book:
 
     def __str__(self):
         return f"Title: {self.title}\nAuthor:{self.author}\nPublisher:{self.publisher}\n\n"
+
     # Function to create and append new student
     def add_new_book(self, id, title, author, publisher):
         ob = Book(id, title, author, publisher)
@@ -37,18 +38,32 @@ class Book:
     def is_borowed(self):
         return self.is_borowed
 
+    def search(self, id):
+        for i in range(ls.__len__()):
+            if(ls[i].id == id):
+                return i
+
+
 # Create a list to add Books
 ls =[]
 
-def list_of_books(json_parse):
-    for where in json_parse['bibs']:
-        print(where)
-        Book.add_new_book(where['id'], where['title'], where['author'], where['publisher'])
+obj = Book("123", "OSkar", "jazebina", "publikacja")
+obj.add_new_book("12325", "OSkar21", "jazebina12", "publikacja1231")
+obj.add_new_book("12326", "OSkar21", "jazebina12", "publikacja1231")
 
 
-list_of_books(get_books("Sienkiewicz"))
-
-print(ls)
+book = Book.search(obj, "123")
+print(book)
+#
+# def list_of_books(json_parse):
+#     for where in json_parse['bibs']:
+#         print(where)
+#         Book.add_new_book(where['id'], where['title'], where['author'], where['publisher'])
+#
+#
+# list_of_books(get_books("Sienkiewicz"))
+#
+# print(ls)
 
 # for book in dic_books:
 #     print(dic_books[book].is_borowed)
