@@ -70,7 +70,7 @@ def get_books(author):
 ls =[]
 
 obj = Book(" ", "0", "0", "0")
-print("\n1.Add new Book\n2.Display Book Details\n3.Search Book\n4.Lend a book \n5.Return Book\n6.Exit")
+print("\n1.Add new Book\n2.Display Book Details\n3.Lend a book \n4.Return Book\n5.Exit")
 
 while True:
     what_to_do = int(input("Enter choice:"))
@@ -83,8 +83,15 @@ while True:
     elif what_to_do == 2:
         ids = input("Enter the book you are looking for")
         if obj.search(ids) == None:
-            print("no books to search")
+            print("book not find")
         else:
+            print(obj.search(ids))
+    elif what_to_do == 3:
+        ids = input("Enter id of the book you want to lend")
+        if obj.search(ids) == None:
+            ids = input("Book not found Try Again: ")
+        else:
+            obj.lend_book(ids)
             print(obj.search(ids))
     else:
         print("Thank You !")
