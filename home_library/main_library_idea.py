@@ -5,55 +5,94 @@ Propozycja rozszerzenia: W prostym przypadku lokalne “wypożyczanie” nie ma 
 
 import requests
 
-def get_books(author):
-    url = "http://data.bn.org.pl/api/bibs.json?author=" + author
-    response = requests.request("GET", url)
-    return response.json(), print(response.text)
 
 class Book:
     #constructor
-    def __init__(self, id, title, author, publisher):
-        self.id = id
+    def __init__(self, ids, title, author, publisher):
+        self.ids = ids
         self.title = title
         self.author = author
         self.publisher = publisher
         self.is_borowed = False
 
     def __str__(self):
-        return f"Title: {self.title}\nAuthor:{self.author}\nPublisher:{self.publisher}\n\n"
+        if self.is_borowed == False:
+            is_borowed = "no"
+        else:
+            is_borowed = "yes"
+        return f"Title: {self.title}\nAuthor:{self.author}\nPublisher:{self.publisher}\nis borowed: {is_borowed}"
 
     # Function to create and append new student
-    def add_new_book(self, id, title, author, publisher):
-        ob = Book(id, title, author, publisher)
+    def add_new_book(self, ids, title, author, publisher):
+        ob = Book(ids, title, author, publisher)
         ls.append(ob)
 
     # Function to display book details
     def display(self, ob):
-         print("Id   : ", ob.id)
-         print("title : ", ob.title)
-         print("author : ", ob.author)
-         print("publisher : ", ob.publisher)
-         print("\n")
+        print("Id   : ", ob.ids)
+        print("title : ", ob.title)
+        print("author : ", ob.author)
+        print("publisher : ", ob.publisher)
+        if ob.is_borowed == False:
+            is_borowed = "no"
+            print("Is borowed : ", is_borowed)
+        else:
+            is_borowed = "yes"
+            print("Is borowed : ", is_borowed)
 
-    def is_borowed(self):
-        return self.is_borowed
 
-    def search(self, id):
+    def lend_book(self, ids):
         for i in range(ls.__len__()):
-            if(ls[i].id == id):
-                return i
+            if(ls[i].ids == ids):
+                self.is_borowed = True
+                print("book is borowed")
+
+    def return_book(self, ids):
+        for i in range(ls.__len__()):
+            if(ls[i].ids == ids):
+                self.is_borowed = True
+                print("book is returned")
+
+    def search(self, ids):
+        for i in range(ls.__len__()):
+            if(ls[i].ids == ids):
+                return ls[i]
+
+
+
+def get_books(author):
+    url = "http://data.bn.org.pl/api/bibs.json?author=" + author
+    response = requests.request("GET", url)
+    return response.json(), print(response.text)
 
 
 # Create a list to add Books
 ls =[]
 
-obj = Book("123", "OSkar", "jazebina", "publikacja")
-obj.add_new_book("12325", "OSkar21", "jazebina12", "publikacja1231")
-obj.add_new_book("12326", "OSkar21", "jazebina12", "publikacja1231")
+obj = Book(" ", "0", "0", "0")
+print("\n1.Add new Book\n2.Display Book Details\n3.Search Book\n4.Lend a book \n5.Return Book\n6.Exit")
+
+while True:
+    what_to_do = int(input("Enter choice:"))
+    if what_to_do == 1:
+        ids = input("Enter ids of the book")
+        title = input("Enter title of the book")
+        author = input("Enter author of the book")
+        publisher = input("Enter publisher of the book")
+        obj.add_new_book(ids, title, author, publisher)
+    elif what_to_do == 2:
+        ids = input("Enter the book you are looking for")
+        if obj.search(ids) == None:
+            print("no books to search")
+        else:
+            print(obj.search(ids))
+    else:
+        print("Thank You !")
+        break
 
 
-book = Book.search(obj, "123")
-print(book)
+#book = Book.search(obj, "12325")
+#print(book)
 #
 # def list_of_books(json_parse):
 #     for where in json_parse['bibs']:
