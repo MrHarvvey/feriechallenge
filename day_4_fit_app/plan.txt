@@ -1,0 +1,90 @@
+This is yor traning for day: 1 do the activity: Walking for: 42 minutes. 
+ This is yor traning for day: 2 do the activity: Frisbee for: 27 minutes. 
+ This is yor traning for day: 3 do the activity: Walking/running for: 31 minutes. 
+ This is yor traning for day: 4 do the activity: Frisbee for: 49 minutes. 
+ This is yor traning for day: 5 do the activity: Build your own workout. for: 53 minutes. 
+ This is yor traning for day: 6 do the activity: Walking for: 28 minutes. 
+ This is yor traning for day: 7 do the activity: Walking for: 47 minutes. 
+ This is yor traning for day: 8 do the activity: Walking/running for: 28 minutes. 
+ This is yor traning for day: 9 do the activity: Walking/running for: 60 minutes. 
+ This is yor traning for day: 10 do the activity: Build your own workout. for: 35 minutes. 
+ This is yor traning for day: 11 do the activity: Frisbee for: 51 minutes. 
+ This is yor traning for day: 12 do the activity: Walking for: 51 minutes. 
+ This is yor traning for day: 13 do the activity: Walking/running for: 40 minutes. 
+ This is yor traning for day: 14 do the activity: Walking for: 55 minutes. 
+ This is yor traning for day: 15 do the activity: Walking for: 36 minutes. 
+ This is yor traning for day: 16 do the activity: Frisbee for: 42 minutes. 
+ This is yor traning for day: 17 do the activity: Dance for: 51 minutes. 
+ This is yor traning for day: 18 do the activity: Walking for: 30 minutes. 
+ This is yor traning for day: 19 do the activity: Dance for: 50 minutes. 
+ This is yor traning for day: 20 do the activity: Dance for: 25 minutes. 
+ This is yor traning for day: 21 do the activity: Frisbee for: 52 minutes. 
+ This is yor traning for day: 22 do the activity: Build your own workout. for: 38 minutes. 
+ This is yor traning for day: 23 do the activity: Walking for: 40 minutes. 
+ This is yor traning for day: 24 do the activity: Walking for: 37 minutes. 
+ This is yor traning for day: 25 do the activity: Dance for: 58 minutes. 
+ This is yor traning for day: 26 do the activity: Dance for: 44 minutes. 
+ This is yor traning for day: 27 do the activity: Dance for: 40 minutes. 
+ This is yor traning for day: 28 do the activity: Walking/running for: 49 minutes. 
+ This is yor traning for day: 29 do the activity: Dance for: 34 minutes. 
+ This is yor traning for day: 30 do the activity: Walking for: 38 minutes. 
+ This is yor traning for day: 31 do the activity: Frisbee for: 38 minutes. 
+ This is yor traning for day: 32 do the activity: Walking for: 37 minutes. 
+ This is yor traning for day: 33 do the activity: Frisbee for: 28 minutes. 
+ This is yor traning for day: 34 do the activity: Walking for: 48 minutes. 
+ This is yor traning for day: 35 do the activity: Walking/running for: 51 minutes. 
+ This is yor traning for day: 36 do the activity: Build your own workout. for: 26 minutes. 
+ This is yor traning for day: 37 do the activity: Build your own workout. for: 57 minutes. 
+ This is yor traning for day: 38 do the activity: Frisbee for: 46 minutes. 
+ This is yor traning for day: 39 do the activity: Walking for: 49 minutes. 
+ This is yor traning for day: 40 do the activity: Frisbee for: 30 minutes. 
+ This is yor traning for day: 41 do the activity: Walking for: 38 minutes. 
+ This is yor traning for day: 42 do the activity: Walking/running for: 41 minutes. 
+ This is yor traning for day: 43 do the activity: Walking/running for: 49 minutes. 
+ This is yor traning for day: 44 do the activity: Walking for: 55 minutes. 
+ This is yor traning for day: 45 do the activity: Build your own workout. for: 51 minutes. 
+ This is yor traning for day: 46 do the activity: Walking for: 35 minutes. 
+ This is yor traning for day: 47 do the activity: Dance for: 34 minutes. 
+ This is yor traning for day: 48 do the activity: Build your own workout. for: 45 minutes. 
+ This is yor traning for day: 49 do the activity: Walking for: 53 minutes. 
+ This is yor traning for day: 50 do the activity: Dance for: 43 minutes. 
+ This is yor traning for day: 51 do the activity: Frisbee for: 40 minutes. 
+ This is yor traning for day: 52 do the activity: Walking for: 54 minutes. 
+ This is yor traning for day: 53 do the activity: Walking/running for: 25 minutes. 
+ This is yor traning for day: 54 do the activity: Dance for: 56 minutes. 
+ This is yor traning for day: 55 do the activity: Walking/running for: 60 minutes. 
+ This is yor traning for day: 56 do the activity: Dance for: 57 minutes. 
+ This is yor traning for day: 57 do the activity: Walking for: 51 minutes. 
+ This is yor traning for day: 58 do the activity: Frisbee for: 37 minutes. 
+ This is yor traning for day: 59 do the activity: Walking for: 60 minutes. 
+ This is yor traning for day: 60 do the activity: Frisbee for: 55 minutes. 
+ This is yor traning for day: 61 do the activity: Dance for: 44 minutes. 
+ This is yor traning for day: 62 do the activity: Walking for: 25 minutes. 
+ This is yor traning for day: 63 do the activity: Frisbee for: 34 minutes. 
+ This is yor traning for day: 64 do the activity: Walking/running for: 42 minutes. 
+ This is yor traning for day: 65 do the activity: Walking for: 47 minutes. 
+ This is yor traning for day: 66 do the activity: Build your own workout. for: 42 minutes. 
+ This is yor traning for day: 67 do the activity: Build your own workout. for: 58 minutes. 
+ This is yor traning for day: 68 do the activity: Dance for: 47 minutes. 
+ This is yor traning for day: 69 do the activity: Build your own workout. for: 43 minutes. 
+ This is yor traning for day: 70 do the activity: Walking/running for: 28 minutes. 
+ This is yor traning for day: 71 do the activity: Walking/running for: 26 minutes. 
+ This is yor traning for day: 72 do the activity: Walking for: 53 minutes. 
+ This is yor traning for day: 73 do the activity: Walking/running for: 57 minutes. 
+ This is yor traning for day: 74 do the activity: Walking for: 48 minutes. 
+ This is yor traning for day: 75 do the activity: Walking for: 58 minutes. 
+ This is yor traning for day: 76 do the activity: Walking/running for: 39 minutes. 
+ This is yor traning for day: 77 do the activity: Walking/running for: 51 minutes. 
+ This is yor traning for day: 78 do the activity: Walking/running for: 55 minutes. 
+ This is yor traning for day: 79 do the activity: Build your own workout. for: 36 minutes. 
+ This is yor traning for day: 80 do the activity: Walking/running for: 45 minutes. 
+ This is yor traning for day: 81 do the activity: Build your own workout. for: 48 minutes. 
+ This is yor traning for day: 82 do the activity: Frisbee for: 59 minutes. 
+ This is yor traning for day: 83 do the activity: Frisbee for: 55 minutes. 
+ This is yor traning for day: 84 do the activity: Walking for: 49 minutes. 
+ This is yor traning for day: 85 do the activity: Dance for: 39 minutes. 
+ This is yor traning for day: 86 do the activity: Dance for: 33 minutes. 
+ This is yor traning for day: 87 do the activity: Walking for: 33 minutes. 
+ This is yor traning for day: 88 do the activity: Frisbee for: 41 minutes. 
+ This is yor traning for day: 89 do the activity: Walking for: 40 minutes. 
+ 
