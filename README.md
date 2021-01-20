@@ -15,4 +15,4 @@ What I learned during the challenge?
 
 • Became more fluent with reading documentation.
 
- 
+ 👨‍💻️most challenging was build own library in challange 9, cost more time than other projects, i had to thing how import correctly books/lend and return them. I had ocassion to make classes which i try improve right now  
