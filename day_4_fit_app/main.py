@@ -1,11 +1,3 @@
-"""##feriechallenge #program4
-Hej, witamy w drugi poniedziałek w tym tygodniu, na szczęście jutro też drugi piątek 😎 Dzisiaj zgodnie z obietnicą program, który jest w stanie zrobić każdy początkujący i da się go zrobić bez skomplikowanych zewnętrznych modułów 🙂 Program nawiązuje do tego, że ostatnio co chwilę są jakieś święta, a wiadomo czemu to sprzyja, zwłaszcza w kombinacji z zamknięciem w domach i zamknięciem obiektów sportowych 😋🥓🍽️ Treść można dość luźno interpretować, ważne, żeby sens był zachowany - obliczanie BMI i uzależnienie od niego w jakiś sposób planu treningowego 🚴
-#FAT #BURNER
-Napisz program, który na podstawie masy [kg] i wzrostu [cm] wylicza wskaźnik BMI (https://en.wikipedia.org/wiki/Body_mass_index) oraz informuje użytkownika, w jakim jest zakresie. Zakresy można wpisać “z palca” (ale może nieco mądrzej niż ciągiem if-elif-else dla każdego zakresu! 😉 ) albo odczytać z dowolnego API, np. https://rapidapi.com/navii/api/bmi-calculator . Następnie program losuje jedną z aktywności fizycznych oraz czas jej wykonania, np. bieganie przez 30 minut. Czas nie może być dłuższy niż podany przez użytkownika (maksymalny czas, który można poświęcić na ćwiczenia). Zadbaj o to, aby czas aktywności był jakoś uzależniony od BMI (na przykład osoba z niedowagą nie powinna ćwiczyć mniej niż osoba o wadze normalnej - ustal pewien minimalny czas; ale już osoba z nadwagą powinna ćwiczyć dłużej - ustal odpowiedni nieliniowy mnożnik, tak aby nie przekroczyć maksimum). Utwórz w ten sposób plan treningowy na 7 następnych dni, wyniki zapisując do pliku .txt.
-Propozycja rozszerzenia: przygotuj urozmaicony plan treningowy uwzględniający maksymalny czas wpisany przez użytkownika - kilka aktywności fizycznych ma wypełniać całą dzienną ilość czasu, mają zajmować jakąs ustaloną minimalną długość (np. 10 minut) oraz nie mogą się powtarzać jednego dnia.
-"""
-
-
 import requests
 import json
 import random
