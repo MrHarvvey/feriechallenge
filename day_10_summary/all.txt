@@ -1,0 +1,637 @@
+import re
+import webbrowser
+ palindrom
+
+moj string   input  Wpisz tekst    
+
+ deleting special signs
+
+def delete specjal data  
+    return re.sub    A Za z         data 
+
+
+
+if delete specjal moj string .lower      delete specjal moj string    1 .lower    
+    print f Twoj wyraz jest pantonimem   moj string    1    
+    webbrowser.open  http   www.palindromy.pl  
+else 
+    print f Twoj wyraz nie jest pantonimem   moj string    1    
+
+from password generator import PasswordGenerator
+
+import clipboard
+
+def get random pas max len  
+    pwo   PasswordGenerator  
+      All properties are optional
+    pwo.maxlen   max len     Optional 
+    pwo.minuchars   1     Optional 
+    pwo.minlchars   1     Optional 
+    pwo.minnumbers   1     Optional 
+    pwo.minschars   1     Optional 
+    return pwo.generate  
+
+clipboard.copy get random pas 10  
+
+
+
+
+import os
+import re
+from collections import Counter
+from modulefinder import ModuleFinder
+
+ how many tasks was done
+
+def tasks made directory  
+      counting folders in directory each is treated as one task
+    try 
+        arr   os.listdir directory 
+    except  
+        print  Directory does not exist  
+      check if directory includes hidden git folder if yes is subtracted
+    if any  .git  or  README.md  in s for s in arr  
+        count task   len arr    1
+        if any  .git  and  README.md  in s for s in arr  
+            count task   len arr    2
+    else 
+        count task   len arr 
+    return count task
+
+
+  getting all files form directory with extension .py and return list of this files
+def get py file directory  
+    list of files     
+    for root  dirs  files in os.walk   home oskar2333 PycharmProjects  feriechallange   
+        for file in files 
+            if file.endswith  .py   
+                list of files.append os.path.join root  file  
+    return list of files
+
+
+
+ count how many lines i wrote in directories excluding empty one
+
+def count lines list files  
+    lines   0
+    for file in list files 
+        with open file  as infp 
+            for line in infp 
+                if line.strip   
+                     lines    1
+    return lines
+
+
+ creating one file from many
+
+def one file list files  
+    with open  all.txt    w   as outfile 
+        for filename in list files 
+            with open filename  as infile 
+                contents   infile.read  
+                new str   re.sub    a zA Z0 9 n .         contents 
+                outfile.write new str 
+
+ counting  unique words in file
+
+def unique words file  
+    return len set w.lower   for w in open file .read  .split    
+
+
+def most common word value  
+    words   open  all.txt    r  .read  .split      read the words into a list.
+    return Counter words .most common value 
+
+def print common value  
+    list common   most common word value 
+    for idx  word in enumerate list common  
+        print f Position  idx   1  was   word 0   occoured  word 1   times  
+
+
+print f Congratulations you made  tasks made   home oskar2333 PycharmProjects  feriechallange    from 10 tasks and you wrote  count lines get py file   home oskar2333 PycharmProjects  feriechallange     lines of code     
+one file get py file   home oskar2333 PycharmProjects  feriechallange   
+print f You wrote  unique words  all.txt    unique words  
+print f Most common word   most common word 1  0  0   used  most common word 1  0  1   times  
+print common 5 
+
+
+def find modules2   
+    dataLog     
+    with open  all.txt    rt   as f 
+        data   f.readlines  
+    for line in data 
+        if line.  contains    import    
+            dataLog.append line 
+    print dataLog 
+
+find modules2  
+
+ examples
+
+
+
+import glob
+print glob.glob   home oskar2333 PycharmProjects  feriechallange     
+
+import os
+arr   os.listdir   home oskar2333 PycharmProjects  feriechallange  
+arr   os.listdir  
+arr   os.listdir   home oskar2333 PycharmProjects  feriechallange  
+for attr in arr 
+   print attr import requests
+import os
+
+clear   lambda  os.system  clear  
+
+
+class Book 
+     constructor
+    def   init   self  ids  title  author  publisher  
+        self.ids   ids
+        self.title   title
+        self.author   author
+        self.publisher   publisher
+        self.is borowed   False
+
+    def   str   self  
+        if self.is borowed    False 
+            is borowed    no 
+        else 
+            is borowed    yes 
+        return f ID   self.ids  n Title   self.title  nAuthor  self.author  nPublisher  self.publisher  nis borowed   is borowed  
+
+      Function to create and append new book
+    def add new book self  ids  title  author  publisher  
+        is borowed   False
+        ob   Book ids  title  author  publisher 
+        ls.append ob 
+
+      Function to display book details
+    def display self  ob  
+        print  Id        ob.ids 
+        print  title      ob.title 
+        print  author      ob.author 
+        print  publisher      ob.publisher 
+        if ob.is borowed    False 
+            is borowed    no 
+            print  Is borowed      is borowed 
+        else 
+            is borowed    yes 
+            print  Is borowed      is borowed 
+
+      Function to lend book
+
+    def lend book self  ids  
+        for i in range ls.  len      
+            if ls i .ids    ids  
+                ls i .is borowed   True
+                print  book is borowed  
+      Function to lend book
+    def return book self  ids  
+        for i in range ls.  len      
+            if ls i .ids    ids  
+                ls i .is borowed   False
+                print  book is returned  
+
+    def search self  ids  
+        for i in range ls.  len      
+            if ls i .ids    ids  
+                return ls i 
+
+
+
+def get books author  
+    url    http   data.bn.org.pl api bibs.json author     author
+    response   requests.request  GET   url 
+    return response.json  
+
+
+def list of books json parse  
+    for idx  where in enumerate json parse  bibs    
+        print f book  idx  added  
+        obj.add new book str where  id     where  title    where  author    where  publisher   
+  Create a list to add Books
+
+
+
+ls    
+
+obj   Book       0    0    0  
+
+
+
+
+
+while True 
+    print   n1.Add new Book n2.Display Book Details n3.Lend a book  n4.Return Book n5.Display all Books n6.Import Books from library n7.Exit  
+    try 
+        what to do   int input  Enter choice    
+    except ValueError 
+        print  Sorry  i dont understand use only numbers  
+        continue
+    if what to do    1 
+        ids   input  Enter ids of the book    
+        title   input  Enter title of the book    
+        author   input  Enter author of the book    
+        publisher   input  Enter publisher of the book    
+        clear  
+        if obj.search ids     None 
+            obj.add new book ids  title  author  publisher 
+            print  book added  
+        else 
+            print  Book with this id exist  
+    elif what to do    2 
+        ids   input  Enter the book you are looking for    
+        clear  
+        if obj.search ids     None 
+            print  book not find  
+        else 
+            print obj.search ids  
+    elif what to do    3 
+        ids   input  Enter id of the book you want to lend    
+        clear  
+        if obj.search ids     None 
+            ids   input  Book not found Try Again    
+            clear  
+        else 
+            obj.lend book ids 
+    elif what to do    4 
+        ids   input  Enter id of the book you want to return    
+        clear  
+        if obj.search ids     None 
+            ids   input  Book not found Try Again    
+            clear  
+        else 
+            obj.return book ids 
+    elif what to do    5 
+        clear  
+        for i in range ls.  len      
+            print f  ls i   n n  
+    elif what to do    6 
+        author   input  Enter author to import books    
+        list of books get books author  
+    else 
+        print  Thank You    
+        break
+
+
+import requests
+import json
+import random
+
+mass   int input  enter how much you weigh in kg     
+height   int input  enter how tall you are in cm     
+age   int input  enter how old are you     
+max time activity   int input  how long do you want to move in minutes  minimum 10     
+ile dni   int input  For how many days do you want to have a training plan       
+
+def what bmi   
+    url    https   fitness calculator.p.rapidapi.com bmi 
+
+    querystring     age   age   weight   mass   height   height 
+
+    headers    
+         x rapidapi key    bf66404f35mshecd7b9b3525744bp1d79a8jsna94048c27ef6  
+         x rapidapi host    fitness calculator.p.rapidapi.com 
+     
+    response   requests.request  GET   url  headers headers  params querystring 
+    bmi values   json.loads response.text 
+    print  Your Bmi is      str bmi values  bmi    
+    what bmi.bmi   bmi values  bmi  
+    what bmi.health   bmi values  health  
+    what bmi.healthy bmi range   bmi values  healthy bmi range  
+    pass
+
+
+what bmi  
+
+def time due bmi bmi  
+    if max time activity   10 
+        print f minimal time activity is 10 you entered   max time activity   
+    if bmi   16 
+        time   random.randint 10  max time activity 
+    elif bmi    16 and bmi    16.9 
+        time   random.randint 15  max time activity 
+    elif bmi    17 and bmi    18.5 
+        time   random.randint 20  max time activity 
+    elif bmi    18.5 and bmi    24.9 
+        time   random.randint 25  max time activity 
+    elif bmi    25 and bmi    29.9 
+        time   random.randint 30  max time activity 
+    else 
+        time   str random.randint 30  max time activity  
+    return time
+
+
+def random activity   
+    list activities     Walking running    Dance    Build your own workout.    Frisbee    Walking  
+    return random.choice list activities 
+
+def create plan   
+    trening file   open  plan.txt    w   
+    for i in range 1  ile dni   1  
+        trening file.write f This is yor traning for day   i  do the activity   random activity    for   time due bmi what bmi.bmi   minutes.  n   
+    print f Your plan for  ile dni  has been created check it      
+
+create plan  
+import requests
+import json
+
+def related film film  
+    querystring     q   film 
+    url    https   imdb8.p.rapidapi.com title auto complete 
+    headers    
+         x rapidapi key    bf66404f35mshecd7b9b3525744bp1d79a8jsna94048c27ef6  
+         x rapidapi host    imdb8.p.rapidapi.com 
+     
+    response   requests.request  GET   url  headers headers  params querystring 
+    return response.text
+
+
+def parsing values text json  
+    parsed json   json.loads text json 
+    for i in range 0  5  
+        try 
+            title   parsed json  d   i   l  
+            year   parsed json  d   i   y  
+            actores   parsed json  d   i   s  
+            rank  parsed json  d   i   rank  
+            print f  title   n  year  year   actores     rank  in rank  
+        except Exception as e 
+            print f no title find  e   
+
+
+parsing values related film input  please enter the movie for which you want to find relations      
+
+
+
+import pandas
+import os
+import glob
+import time
+from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
+from email.mime.text import MIMEText
+import smtplib
+
+ imporing environment variables to connect with email
+
+try 
+    login   os.getenv  EMAIL LOGIN  
+    password   os.getenv  EMAIL PASS  
+except Exception as e 
+    print f You need to add environment variables EMAIL LOGIN and EMAIL PASS. Error   e   
+
+ checking connection with your email server
+
+try 
+    server   smtplib.SMTP  smtp.gmail.com   587 
+    server.ehlo  
+    server.starttls  
+    server.login login  password 
+except Exception as e 
+    print f Something went wrong   e   
+
+ importing CSV file
+
+try 
+    df   pandas.read csv  Untitled 1.csv  
+except Exception as e 
+    print f incorrect data download from excel file e   
+
+ changing .png file in scrit location to name and surname
+
+def change attachment name name  surname  
+    try 
+        filename   glob.glob   .png   0 
+        os.rename filename  f  name   surname .png  
+    except Exception as e 
+        print f File does not exist e   
+
+ sending content
+
+def sending email html  
+    for i in range 0  len df  imie nazwisko     
+        imie nazwisko   df  imie nazwisko   i 
+        first  last   imie nazwisko.split  
+        email   df  email   i 
+        message   f Hi  first   it s file generated for you 
+        change attachment name first  last 
+        msg   MIMEMultipart  
+        img data   MIMEImage open glob.glob   .png   0    rb  .read   
+        img data.add header  Content Disposition    attachment  filename   s    glob.glob   .png   0  
+        msg.attach img data 
+        messege1   MIMEText message   plain  
+        html1   MIMEText html   html  
+        msg.attach messege1 
+        msg.attach html1 
+        msg  Subject      Your image 
+        server.sendmail login  email  msg.as string   
+        time.sleep 2 
+    server.quit  
+
+
+html      
+ html 
+   head   head 
+   body 
+     p Hi  br 
+       How are you  br 
+       Here is the  a href  http   www.python.org  link  a  you wanted.
+      p 
+    body 
+  html 
+   
+
+
+sending email html 
+
+
+
+import random
+import tkinter as tk
+import json
+import requests
+from PIL import ImageTk  Image
+from datetime import datetime
+
+ parameters to wheter check
+
+
+url    https   community open weather map.p.rapidapi.com weather 
+
+querystring     q   Warsaw pl   lat   0   lon   0   callback   test   id   2172797   lang   null   units     metric   or   imperial     mode   xml  html  
+
+headers    
+     x rapidapi key    bf66404f35mshecd7b9b3525744bp1d79a8jsna94048c27ef6  
+     x rapidapi host    community open weather map.p.rapidapi.com 
+     
+
+ screen size
+
+HEIGHT   575
+WIDTH   960
+
+  parameters to random quotes
+
+url quotes    https   type.fit api quotes 
+
+def random quotes   
+    response   requests.request  GET   url quotes 
+    json pars   json.loads response.text 
+    random number   random.randint 1 1000 
+    random quotes.text   json pars random number   text  
+    random quotes.autor   json pars random number   author  
+
+
+
+
+def data wheather   
+    response   requests.request  GET   url  headers headers  params querystring 
+    print response.text 
+    json to pars   json.loads response.text 5  1  
+    data wheather.weather   json to pars  weather   0   main  
+    data wheather.temp      .2f  .format  int json to pars  main    temp      273.15  
+    data wheather.pressure   json to pars  main    pressure  
+    data wheather.dt   datetime.fromtimestamp int json to pars  dt    .strftime   A   B  d   Y  I  M  S  
+
+
+
+def insert data   
+    data wheather  
+    random quotes  
+    jaka pogoda.insert tk.INSERT   Weather      data wheather.weather     n  
+    jaka pogoda.insert tk.INSERT   Temp      str data wheather.temp     n  
+    jaka pogoda.insert tk.INSERT   Pressure      str data wheather.pressure     n  
+    jaka pogoda.insert tk.INSERT   Date      data wheather.dt     n  
+    jaka pogoda.insert tk.INSERT   Quotation      random quotes.text     n  
+    jaka pogoda.insert tk.INSERT   Author      random quotes.autor     n  
+
+
+
+
+root   tk.Tk  
+
+root.title  weather  
+canvas   tk.Canvas root  height HEIGHT  width WIDTH 
+canvas.pack  
+
+frame   tk.Frame root  background   C9F6CD  
+
+frame.place relwidth 1  relheight 1 
+
+img   ImageTk.PhotoImage Image.open  globus.jpg   
+
+label   tk.Label frame  image img 
+label.pack  
+
+miasto   tk.Entry frame  bd  3  
+miasto.place relheight 0.05  relwidth 0.3  relx 0.4  rely 0.1 
+
+jaka pogoda   tk.Text frame 
+jaka pogoda.config state  normal  
+jaka pogoda.place relheight 0.3  relwidth 0.4  relx 0.4  rely 0.3 
+
+button   tk.Button frame  text  Check   bd  3   command lambda  insert data   
+button.place relheight 0.05  relwidth 0.1  relx 0.1  rely 0.1 
+
+
+root.mainloop  
+
+
+
+
+
+import haversine as hs
+import requests
+import json
+
+import geocoder
+
+print   This is your program to checking distance between two citys  if you want check distance beetwen your computer localization and other city in first city write  me   
+
+
+def get localization info localization  
+    try 
+        url    https   trueway geocoding.p.rapidapi.com Geocode 
+        querystring     address   localization   language   en  
+        headers    
+             x rapidapi key    bf66404f35mshecd7b9b3525744bp1d79a8jsna94048c27ef6  
+             x rapidapi host    trueway geocoding.p.rapidapi.com 
+         
+        response   requests.request  GET   url  headers headers  params querystring 
+    except Exception as e 
+        raise print e 
+    return response.text
+
+
+def localiation x y data json  
+     input string parse data and return location lat and lng
+    try 
+        json parse   json.loads data json 
+        localion lat   json parse  results   0   location    lat  
+        localion lng   json parse  results   0   location    lng  
+    except Exception as e 
+        raise print e 
+    return localion lat  localion lng
+
+def get distance loc1  loc2  
+     returning distance in kilomiters
+    return str int hs.haversine loc1  loc2       km 
+
+
+def distance me   
+    loc1   input  first city    
+    if loc1.lower       me  
+        my localization   geocoder.ip  me  
+        loc1   my localization.latlng
+        loc2   localiation x y get localization info input  second city      
+        distance   get distance loc1  loc2 
+        print distance 
+    else 
+        loc1   localiation x y get localization info loc1  
+        loc2   localiation x y get localization info input  second city      
+        distance   get distance loc1  loc2 
+        print distance 
+
+
+distance me  
+
+
+  Press the green button in the gutter to run the script.
+
+import glob
+from PIL import Image
+import os
+
+
+def resize photos   
+    for idx  name in enumerate glob.glob  big photos      
+        new name   f small  idx      str name 11   
+        image   Image.open name 
+        half height  half weight   int  image.size 0   2   int  image.size 1   2 
+        tup   tuple  half height half weight  
+        new image   image.resize tup 
+        image.save new name 
+
+def check percent size   
+    for file in glob.glob  big photos     
+        big size    int os.stat file .st size 
+    for file in glob.glob  small     
+        small     int os.stat file .st size 
+    print f The size of your files has been reduced by   int small big size  100   percent  
+
+check percent size  
+
+
+resize photos  
+lista    1  3  7  11  2   6  0 
+najmniejsza   None
+najwieksza   None
+for i in lista 
+    if najmniejsza    None or najmniejsza   i 
+        najmniejsza   i
+    if najwieksza    None or najwieksza   i 
+        najwieksza   i
+print  najmniejsza     najmniejsza 
+print  najwieksza     najwieksza 
