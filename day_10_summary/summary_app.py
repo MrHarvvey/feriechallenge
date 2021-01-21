@@ -72,12 +72,7 @@ def print_common(value):
     for idx, word in enumerate(list_common):
         print(f'Position {idx + 1} was: {word[0]} occoured {word[1]} times')
 
-print(f'Congratulations you made {tasks_made("/home/oskar2333/PycharmProjects/#feriechallange")} from 10 tasks and you wrote {count_lines(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))} lines of code !!')
-one_file(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))
-print(f'You wrote {unique_words("all.txt")} unique words')
-print(f'Most common word: {most_common_word(1)[0][0]} used {most_common_word(1)[0][1]} times')
-print_common(5)
-
+#returns list of used modules
 
 def find_modules2():
     dataLog = []
@@ -86,7 +81,12 @@ def find_modules2():
     for line in data:
         if line.__contains__('import '):
             dataLog.append(line)
-    print(dataLog)
+    return dataLog
 
-find_modules2()
+print(f'Congratulations you made {tasks_made("/home/oskar2333/PycharmProjects/#feriechallange")} from 10 tasks and you wrote {count_lines(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))} lines of code !!')
+one_file(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))
+print(f'You wrote {unique_words("all.txt")} unique words')
+print(f'Most common word: {most_common_word(1)[0][0]} used {most_common_word(1)[0][1]} times')
+print_common(5)
+print(f'You used: {len(find_modules2())} Modules')
 

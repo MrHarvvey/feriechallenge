@@ -97,23 +97,20 @@ def one file list files
 def unique words file  
     return len set w.lower   for w in open file .read  .split    
 
+ return one common word
 
 def most common word value  
     words   open  all.txt    r  .read  .split      read the words into a list.
     return Counter words .most common value 
+
+ prints touple most coomon words
 
 def print common value  
     list common   most common word value 
     for idx  word in enumerate list common  
         print f Position  idx   1  was   word 0   occoured  word 1   times  
 
-
-print f Congratulations you made  tasks made   home oskar2333 PycharmProjects  feriechallange    from 10 tasks and you wrote  count lines get py file   home oskar2333 PycharmProjects  feriechallange     lines of code     
-one file get py file   home oskar2333 PycharmProjects  feriechallange   
-print f You wrote  unique words  all.txt    unique words  
-print f Most common word   most common word 1  0  0   used  most common word 1  0  1   times  
-print common 5 
-
+ returns list of used modules
 
 def find modules2   
     dataLog     
@@ -122,23 +119,16 @@ def find modules2
     for line in data 
         if line.  contains    import    
             dataLog.append line 
-    print dataLog 
+    return dataLog
 
-find modules2  
+print f Congratulations you made  tasks made   home oskar2333 PycharmProjects  feriechallange    from 10 tasks and you wrote  count lines get py file   home oskar2333 PycharmProjects  feriechallange     lines of code     
+one file get py file   home oskar2333 PycharmProjects  feriechallange   
+print f You wrote  unique words  all.txt    unique words  
+print f Most common word   most common word 1  0  0   used  most common word 1  0  1   times  
+print common 5 
+print f You used   len find modules2     Modules  
 
- examples
-
-
-
-import glob
-print glob.glob   home oskar2333 PycharmProjects  feriechallange     
-
-import os
-arr   os.listdir   home oskar2333 PycharmProjects  feriechallange  
-arr   os.listdir  
-arr   os.listdir   home oskar2333 PycharmProjects  feriechallange  
-for attr in arr 
-   print attr import requests
+import requests
 import os
 
 clear   lambda  os.system  clear  
