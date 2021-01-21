@@ -59,16 +59,18 @@ def one_file(list_files):
 def unique_words(file):
     return len(set(w.lower() for w in open(file).read().split()))
 
+#return one common word
 
 def most_common_word(value):
     words = open("all.txt", "r").read().split()  # read the words into a list.
     return Counter(words).most_common(value)
 
+#prints touple most coomon words
+
 def print_common(value):
     list_common = most_common_word(value)
     for idx, word in enumerate(list_common):
         print(f'Position {idx + 1} was: {word[0]} occoured {word[1]} times')
-
 
 print(f'Congratulations you made {tasks_made("/home/oskar2333/PycharmProjects/#feriechallange")} from 10 tasks and you wrote {count_lines(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))} lines of code !!')
 one_file(get_py_file("/home/oskar2333/PycharmProjects/#feriechallange"))
